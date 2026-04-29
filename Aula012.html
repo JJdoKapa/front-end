@@ -3,21 +3,40 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Aula(audio)</title>
+    <title>aula</title>
 </head>
 <body>
-    <h1> Reproduzindo Áudio</h1>
+    <!DOCTYPE html>
+<html lang="pt-br">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Mídias em HTML5</title>
+</head>
+<body>
+<h1>Imagem dinâmica</h1>
+<p>Tente abrir esse site em vários dispositivos diferentes
+ou simplesmente auemente e diminua o tamanho do seu navegador.</p>
+<picture> <!--usado para fazer imagens responsivas ou seja que se adaptam-->
+<source media="(max-width: 750px )" srcset="imagens/fotos-p.png" type="image/png"> <!--source define o tamanho da imagen que vai abrir, srcset é usado para definir o arquivo de imagen e o type define o tipo de imagem-->
+<source media="(max-width: 1050px)" srcset="imagens/fotos-m.png" type="image/png">
+<img src="imagens/fotos-g.png" alt="Imagem flexível">
+</picture>
+
+<h1> Reproduzindo Áudio</h1>
 <p> Vamos aprender a reproduzir audios em HTML5</p>
-<audio src="" controls autoplay></audio>
+<audio src="midia/happy-mistake.mp3" controls autoplay></audio>
 <!--MP3 WAV OGG-->
 <audio preload="metadata" autoplay controls loop>
-<source src="canzoni preferite - Yugo Kanno - Topic (128k).mp3" type="audio/mpeg">
-<source src="canzoni preferite - Yugo Kanno - Topic (128k).mp3" type="audio/ogg">
-<source src="canzoni preferite - Yugo Kanno - Topic (128k).mp3" type="audio/wav">
+<source src="midia/happy-mistake.mp3" type="audio/mpeg">
+<source src="midia/happy-mistake.ogg" type="audio/ogg">
+<source src="midia/happy-mistake.wav" type="audio/wav">
 <p>infelizmente o seu navegador não consegue reproduzir áudio. <a
-href="">Clique aqui para baixar o arquivo MP3</a>
+href="midia/happy-mistake.mp3">Clique aqui para baixar o arquivo MP3</a>
 
 </p>
 </audio>
+</body>
+</html>
 </body>
 </html>
